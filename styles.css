@@ -1,0 +1,165 @@
+body{
+    background-color:darkgray ;
+}
+.caixa-principal{
+    width:415px ;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    background-color: #E5E5Eda5;
+    overflow: hidden;
+}
+
+
+
+.caixa-header{              /*começo header*/
+    height: 92px;
+    width:100%;
+    background-color: red;
+    position: fixed;
+    width: 415px;
+    height: 92px;
+    margin: auto;
+    z-index: 1;
+    }
+
+.caixa-header h1{
+    padding-left: 21px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: white;
+}
+
+.caixa-header h2{
+    padding-left: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}                           /*final header*/
+
+.caixa-conteudo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 73px;
+    margin-bottom: 100px;
+}
+
+.titulo{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+
+}
+.primeiro-seu-prato{
+    display: flex;
+    position: relative;
+    margin-left: 19px;
+}
+.titulo{
+    top: 30px;
+}
+.prato{
+    width: 172px;
+    height: 216px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-top: 70px;
+    margin-right: 16px;
+    padding: 10px;
+
+}
+.prato h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    padding-top: 4px;
+    padding-bottom: 10px;
+
+}
+
+.prato h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #A6A6A6;
+    padding-top: 2px;
+
+}
+.prato h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    padding-top: 8px;
+
+
+}
+.prato-foto{
+    width: 144px;
+    height: 90px;
+}
+
+.titulo{
+    position: absolute;
+}
+
+.agora-sua-bebida{
+    display: flex;
+    position: relative;
+    margin-left: 19px;
+}
+
+.por-fim-a-sobremesa{
+    display: flex;
+    position: relative;
+    margin-left: 19px;
+}
+.caixa-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width:100%;
+    background-color: white;
+    position: fixed;
+    width: 415px;
+    height: 92px;
+    margin: auto;
+    z-index: 1;
+    bottom: 0;
+}
+button {
+    width: 364px;
+    height: 61px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    background-color:#CBCBCB;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    
+}
