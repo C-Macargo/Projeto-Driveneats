@@ -1,13 +1,14 @@
 body{
-    background-color:darkgray ;
+    background-color:#EEEEEE;
 }
 .caixa-principal{
     width:415px ;
     height: 100%;
     align-items: center;
     margin: auto;
-    background-color: #E5E5Eda5;
-    overflow: hidden;
+    background-color:#EEEEEE;
+    overflow-x: hidden;
+
 }
 
 
@@ -59,12 +60,19 @@ body{
     font-size: 26px;
     line-height: 32px;
     letter-spacing: 0.018em;
+    left: 22px;
 
+}
+.prato-scroll{
+    display: flex;
+    position: relative;
+    margin-left: 19px;
+    overflow-x: scroll;
 }
 .primeiro-seu-prato{
     display: flex;
     position: relative;
-    margin-left: 19px;
+    overflow-x: scroll;
 }
 .titulo{
     top: 30px;
@@ -72,13 +80,15 @@ body{
 .prato{
     width: 172px;
     height: 216px;
-    background-color: blueviolet;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background: #FFFFFF;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 8px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: solid;
+    border-color: white;
+
     margin-top: 70px;
     margin-right: 16px;
     padding: 10px;
@@ -122,17 +132,31 @@ body{
 .titulo{
     position: absolute;
 }
+.bebida-scroll{
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    margin-left: 19px;
 
+}
 .agora-sua-bebida{
     display: flex;
     position: relative;
-    margin-left: 19px;
-}
+    overflow-x: scroll;
 
-.por-fim-a-sobremesa{
+}
+.sobremesa-scroll{
     display: flex;
     position: relative;
     margin-left: 19px;
+    overflow-x: scroll;
+}
+.por-fim-a-sobremesa{
+    display: flex;
+    position: relative;
+
+
+
 }
 .caixa-footer{
     display: flex;
