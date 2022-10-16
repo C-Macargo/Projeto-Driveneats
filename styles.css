@@ -8,10 +8,7 @@ body{
     margin: auto;
     background-color:#EEEEEE;
     overflow-x: hidden;
-
-}
-
-
+    }
 
 .caixa-header{              /*começo header*/
     height: 92px;
@@ -23,7 +20,6 @@ body{
     margin: auto;
     z-index: 1;
     }
-
 .caixa-header h1{
     padding-left: 21px;
     font-family: 'Righteous';
@@ -34,7 +30,6 @@ body{
     letter-spacing: -0.012em;
     color: white;
 }
-
 .caixa-header h2{
     padding-left: 21px;
     font-family: 'Roboto';
@@ -52,8 +47,8 @@ body{
     margin-top: 73px;
     margin-bottom: 100px;
 }
-
 .titulo{
+    position: absolute;
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
@@ -61,7 +56,7 @@ body{
     line-height: 32px;
     letter-spacing: 0.018em;
     left: 22px;
-
+    top: 30px;
 }
 .prato-scroll{
     display: flex;
@@ -73,9 +68,6 @@ body{
     display: flex;
     position: relative;
     overflow-x: scroll;
-}
-.titulo{
-    top: 30px;
 }
 .prato{
     width: 172px;
@@ -93,15 +85,11 @@ body{
     padding: 10px;
     position: relative;
 }
-
 .prato-escolhido{
     border-radius: 9px;
     border: solid;
     border-color: green;
-;
-
 }
-
 .prato-scroll h1{
     font-family: 'Roboto';
     font-style: normal;
@@ -110,9 +98,7 @@ body{
     color: #333333;
     padding-top: 4px;
     padding-bottom: 10px;
-
 }
-
 .prato-scroll h2{
     font-family: 'Roboto';
     font-style: normal;
@@ -120,7 +106,6 @@ body{
     font-size: 15px;
     color: #A6A6A6;
     padding-top: 2px;
-
 }
 .prato-scroll h3{
     font-family: 'Roboto';
@@ -129,25 +114,18 @@ body{
     font-size: 16px;
     color: #000000;
     padding-top: 8px;
-
-
 }
 .prato-foto{
     width: 144px;
     height: 90px;
 }
 
-.titulo{
-    position: absolute;
-}
-.bebida-scroll{
+.bebida-scroll{       
     display: flex;
     position: relative;
     overflow-x: scroll;
     margin-left: 19px;
-
 }
-
 .bebida-scroll h1{
     font-family: 'Roboto';
     font-style: normal;
@@ -156,9 +134,7 @@ body{
     color: #333333;
     padding-top: 4px;
     padding-bottom: 10px;
-
 } 
-
 .bebida-scroll h2{
     font-family: 'Roboto';
     font-style: normal;
@@ -166,7 +142,6 @@ body{
     font-size: 15px;
     color: #A6A6A6;
     padding-top: 2px;
-
 } 
 .bebida-scroll h3{
     font-family: 'Roboto';
@@ -175,9 +150,7 @@ body{
     font-size: 16px;
     color: #000000;
     padding-top: 8px;
-
 } 
-
 .bebida{
     width: 172px;
     height: 216px;
@@ -194,19 +167,17 @@ body{
     padding: 10px;
     position: relative;
 }
-
 .bebida-escolhida{
     border-radius: 9px;
     border: solid;
     border-color: green;
 }
-
 .agora-sua-bebida{
     display: flex;
     position: relative;
     overflow-x: scroll;
-
 }
+
 .sobremesa-scroll{
     display: flex;
     position: relative;
@@ -222,7 +193,6 @@ body{
     color: #333333;
     padding-top: 4px;
     padding-bottom: 10px;
-
 } 
 
 .sobremesa-scroll h2{
@@ -232,7 +202,6 @@ body{
     font-size: 15px;
     color: #A6A6A6;
     padding-top: 2px;
-
 } 
 .sobremesa-scroll h3{
     font-family: 'Roboto';
@@ -241,7 +210,6 @@ body{
     font-size: 16px;
     color: #000000;
     padding-top: 8px;
-
 } 
 
 .sobremesa{
@@ -269,10 +237,8 @@ body{
 .por-fim-a-sobremesa{
     display: flex;
     position: relative;
-
-
-
 }
+
 .caixa-footer{
     display: flex;
     align-items: center;
@@ -306,22 +272,8 @@ body{
 
 .botao-ativo{
     background-color:green;
-    width: 364px;
-    height: 61px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border-radius: 30px;
     color: white;
 }
-
-
-
 
 
 .checkmark{

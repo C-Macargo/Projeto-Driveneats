@@ -11,10 +11,6 @@ function SelecionarPrato(PratoPrincipal){
     PratoPrincipal.classList.add("prato-escolhido");
     PratoSelecionado = PratoPrincipal.innerHTML;
     AtivarBotao();
-
-
-    
-    
 }
 function SelecionarBebida(BebidaPrincipal){
     const anterior2 = document.querySelector(".bebida-escolhida")
@@ -50,5 +46,31 @@ function AtivarBotao(){
     }
     }
 }
+    function EnviarMensagem(){
+        const PratoEscolhido = (document.querySelector(".prato-escolhido>h1")).innerHTML;
+        const BebidaEscolhida = (document.querySelector(".bebida-escolhida>h1")).innerHTML;
+        const SobremesaEscolhida = (document.querySelector(".sobremesa-escolhida>h1")).innerHTML;
+        let total=0;
+        let valor = (document.querySelector(".prato-escolhido>h3")).innerHTML.replace("R$ ", "");
+        valor = valor.replace(",", ".")
     
+        valor = Number(valor);
+        total += valor;
+    
+            valor = (document.querySelector(".bebida-escolhida>h3")).innerHTML.replace("R$ ", "");
+            valor = valor.replace(",", ".")
+            valor = Number(valor);
+            total += valor;
+    
+                valor = (document.querySelector(".sobremesa-escolhida>h3")).innerHTML.replace("R$ ", "");
+                valor = valor.replace(",", ".")
+                valor = Number(valor);
+                total += valor;
+    
+    
+                    let str= `Olá, gostaria de fazer o pedido:\n- Prato: ${PratoEscolhido}\n- Bebida: ${BebidaEscolhida}\n- Sobremesa: ${SobremesaEscolhida}\nTotal: R$ ${total.toFixed(2)}`;
+                    str = encodeURIComponent(str);
+                    window.open("https://wa.me/5521994329050?text=" + str);
+    
+    }
 
