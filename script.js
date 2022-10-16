@@ -1,94 +1,54 @@
-// escolher Primeiro prato script//
-function EscolherFrango(){  
-    document.getElementById("Frango").style.borderColor = "green";
-    document.getElementById("Pratof").style.borderColor = "white";
-    document.getElementById("Macarrao").style.borderColor = "white";
-    document.getElementById("Salada").style.borderColor = "white";
+let PratoSelecionado, BebidaSelecionda, SobremesaSelecionada;
+let BotaoAtivado = document.querySelector("button");
+    BotaoAtivado.disabled = true;
 
-}
+function SelecionarPrato(PratoPrincipal){
+    const anterior = document.querySelector(".prato-escolhido")
 
-function EscolherPf(){
-    document.getElementById("Frango").style.borderColor = "white";
-    document.getElementById("Pratof").style.borderColor = "green";
-    document.getElementById("Macarrao").style.borderColor = "white";
-    document.getElementById("Salada").style.borderColor = "white";
-}
+    if (anterior !== null){
+        anterior.classList.remove("prato-escolhido")
+    }
+    PratoPrincipal.classList.add("prato-escolhido");
+    PratoSelecionado = PratoPrincipal.innerHTML;
+    AtivarBotao();
 
-function EscolherMacarrao(){
-    document.getElementById("Frango").style.borderColor = "white";
-    document.getElementById("Pratof").style.borderColor = "white";
-    document.getElementById("Macarrao").style.borderColor = "green";
-    document.getElementById("Salada").style.borderColor = "white";
 
     
-}
-
-function EscolherSalada(){
-    document.getElementById("Frango").style.borderColor = "white";
-    document.getElementById("Pratof").style.borderColor = "white";
-    document.getElementById("Macarrao").style.borderColor = "white";
-    document.getElementById("Salada").style.borderColor = "green";
-}
-
-// escolher Bebida script//
-function EscolherCoca(){  
-    document.getElementById("Coca").style.borderColor = "green";
-    document.getElementById("Suco").style.borderColor = "white";
-    document.getElementById("Cha").style.borderColor = "white";
-    document.getElementById("Agua").style.borderColor = "white";
-}
-
-function EscolherSuco(){  
-    document.getElementById("Coca").style.borderColor = "white";
-    document.getElementById("Suco").style.borderColor = "green";
-    document.getElementById("Cha").style.borderColor = "white";
-    document.getElementById("Agua").style.borderColor = "white";
-}
-
-function EscolherCha(){  
-    document.getElementById("Coca").style.borderColor = "white";
-    document.getElementById("Suco").style.borderColor = "white";
-    document.getElementById("Cha").style.borderColor = "green";
-    document.getElementById("Agua").style.borderColor = "white";
-}
-
-function EscolherAgua(){  
-    document.getElementById("Coca").style.borderColor = "white";
-    document.getElementById("Suco").style.borderColor = "white";
-    document.getElementById("Cha").style.borderColor = "white";
-    document.getElementById("Agua").style.borderColor = "green";
-}
-
-
-//escolher sobremesa script//
-function EscolherPudim(){  
-    document.getElementById("Pudim").style.borderColor = "green";
-    document.getElementById("Brownie").style.borderColor = "white";
-    document.getElementById("Quindim").style.borderColor = "white";
-    document.getElementById("Brigadeiro").style.borderColor = "white";
     
 }
+function SelecionarBebida(BebidaPrincipal){
+    const anterior2 = document.querySelector(".bebida-escolhida")
 
-function EscolherBrownie(){  
-    document.getElementById("Pudim").style.borderColor = "white";
-    document.getElementById("Brownie").style.borderColor = "green";
-    document.getElementById("Quindim").style.borderColor = "white";
-    document.getElementById("Brigadeiro").style.borderColor = "white";
-    
+    if (anterior2 !== null){
+        anterior2.classList.remove("bebida-escolhida")
+}
+    BebidaPrincipal.classList.add("bebida-escolhida")
+    BebidaSelecionda = BebidaPrincipal.innerHTML;
+    AtivarBotao()
+}
+function SelecionarSobremesa(SobremesaPrincipal){
+    const anterior3 = document.querySelector(".sobremesa-escolhida")
+
+    if (anterior3 !== null){
+        anterior3.classList.remove("sobremesa-escolhida")
+    }
+
+    SobremesaPrincipal.classList.add("sobremesa-escolhida")
+    SobremesaSelecionada = SobremesaPrincipal.innerHTML;
+    AtivarBotao()
 }
 
-function EscolherQuindim(){  
-    document.getElementById("Pudim").style.borderColor = "white";
-    document.getElementById("Brownie").style.borderColor = "white";
-    document.getElementById("Quindim").style.borderColor = "green";
-    document.getElementById("Brigadeiro").style.borderColor = "white";
-    
+function AtivarBotao(){
+    if (PratoSelecionado !== undefined){
+    if (BebidaSelecionda !== undefined){
+    if (SobremesaSelecionada !== undefined){
+        const FinalizarPedidoTexto = document.querySelector("button")
+        FinalizarPedidoTexto.innerHTML ="Fechar pedido"
+        FinalizarPedidoTexto.classList.add("botao-ativo")
+        BotaoAtivado.disabled = false;
+    }
+    }
+    }
 }
+    
 
-function EscolherBrigadeiro(){  
-    document.getElementById("Pudim").style.borderColor = "white";
-    document.getElementById("Brownie").style.borderColor = "white";
-    document.getElementById("Quindim").style.borderColor = "white";
-    document.getElementById("Brigadeiro").style.borderColor = "green";
-    
-}
