@@ -47,6 +47,8 @@ function AtivarBotao(){
     }
 }
     function EnviarMensagem(){
+        const nome = prompt("Qual o seu nome?")
+        const endereco = prompt("Qual o seu endereço?")
         const PratoEscolhido = (document.querySelector(".prato-escolhido>h1")).innerHTML;
         const BebidaEscolhida = (document.querySelector(".bebida-escolhida>h1")).innerHTML;
         const SobremesaEscolhida = (document.querySelector(".sobremesa-escolhida>h1")).innerHTML;
@@ -66,9 +68,11 @@ function AtivarBotao(){
                 valor = valor.replace(",", ".")
                 valor = Number(valor);
                 total += valor;
-    
-    
-                    let str= `Olá, gostaria de fazer o pedido:\n- Prato: ${PratoEscolhido}\n- Bebida: ${BebidaEscolhida}\n- Sobremesa: ${SobremesaEscolhida}\nTotal: R$ ${total.toFixed(2)}`;
+                
+                    let str= `Olá, gostaria de fazer o pedido:\n- Prato: ${PratoEscolhido}\n- Bebida: ${BebidaEscolhida}\n- Sobremesa: ${SobremesaEscolhida}\nTotal: R$ ${total.toFixed(2)}
+                    \n- Nome: ${nome}
+                    \n- Endereço: ${endereco}`
+                    
                     str = encodeURIComponent(str);
                     window.open("https://wa.me/5521994329050?text=" + str);
     
